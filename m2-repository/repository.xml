@@ -1,0 +1,35 @@
+<repository lastmodified='20201103044048.123'>
+  <resource id='net.openhft.affinity/3.0.6' symbolicname='net.openhft.affinity' presentationname='OpenHFT :: affinity' uri='net/openhft/affinity/3.0.6/affinity-3.0.6.jar' version='3.0.6'>
+    <description>Java Thread Affinity library</description>
+    <size>68618</size>
+    <capability name='bundle'>
+      <p n='symbolicname' v='net.openhft.affinity'/>
+      <p n='presentationname' v='OpenHFT :: affinity'/>
+      <p n='version' t='version' v='3.0.6'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.openhft.affinity'/>
+      <p n='version' t='version' v='3.0.6'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.openhft.affinity.impl'/>
+      <p n='version' t='version' v='3.0.6'/>
+      <p n='uses:' v='com.sun.jna,net.openhft.affinity'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.openhft.ticker'/>
+      <p n='version' t='version' v='3.0.6'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='net.openhft.ticker.impl'/>
+      <p n='version' t='version' v='3.0.6'/>
+      <p n='uses:' v='net.openhft.ticker'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=com.sun.jna))' extend='false' multiple='false' optional='false'>Import package com.sun.jna</require>
+    <require name='package' filter='(&amp;(package=com.sun.jna.platform.win32))' extend='false' multiple='false' optional='true'>Import package com.sun.jna.platform.win32;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=com.sun.jna.ptr))' extend='false' multiple='false' optional='false'>Import package com.sun.jna.ptr</require>
+    <require name='package' filter='(&amp;(package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package org.slf4j;version="[1.7,2)"</require>
+    <require name='package' filter='(&amp;(package=sun.misc))' extend='false' multiple='false' optional='false'>Import package sun.misc</require>
+  </resource>
+</repository>

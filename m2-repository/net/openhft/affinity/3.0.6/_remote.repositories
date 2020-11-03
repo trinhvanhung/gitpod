@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Nov 03 04:40:48 UTC 2020
+affinity-3.0.6.jar>=
+affinity-3.0.6-sources.jar>=
+affinity-3.0.6.pom>=
+affinity-3.0.6-javadoc.jar>=
