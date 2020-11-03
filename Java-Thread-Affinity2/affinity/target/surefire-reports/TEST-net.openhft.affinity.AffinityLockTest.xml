@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="net.openhft.affinity.AffinityLockTest" time="0.431" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspace/Java-Thread-Affinity/affinity/target/test-classes:/workspace/Java-Thread-Affinity/affinity/target/classes:/workspace/m2-repository/org/slf4j/slf4j-api/1.7.14/slf4j-api-1.7.14.jar:/workspace/m2-repository/net/java/dev/jna/jna/4.2.1/jna-4.2.1.jar:/workspace/m2-repository/net/java/dev/jna/jna-platform/4.2.1/jna-platform-4.2.1.jar:/workspace/m2-repository/com/intellij/annotations/12.0/annotations-12.0.jar:/workspace/m2-repository/org/easymock/easymock/3.4/easymock-3.4.jar:/workspace/m2-repository/org/objenesis/objenesis/2.2/objenesis-2.2.jar:/workspace/m2-repository/junit/junit/4.12/junit-4.12.jar:/workspace/m2-repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/workspace/m2-repository/org/slf4j/slf4j-simple/1.7.14/slf4j-simple-1.7.14.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/workspace/Java-Thread-Affinity/affinity/target/surefire/surefirebooter5518104813199388368.jar /workspace/Java-Thread-Affinity/affinity/target/surefire 2020-11-03T04-40-46_324-jvmRun1 surefire6779509233539057058tmp surefire_05254392604877789409tmp"/>
+    <property name="surefire.test.class.path" value="/workspace/Java-Thread-Affinity/affinity/target/test-classes:/workspace/Java-Thread-Affinity/affinity/target/classes:/workspace/m2-repository/org/slf4j/slf4j-api/1.7.14/slf4j-api-1.7.14.jar:/workspace/m2-repository/net/java/dev/jna/jna/4.2.1/jna-4.2.1.jar:/workspace/m2-repository/net/java/dev/jna/jna-platform/4.2.1/jna-platform-4.2.1.jar:/workspace/m2-repository/com/intellij/annotations/12.0/annotations-12.0.jar:/workspace/m2-repository/org/easymock/easymock/3.4/easymock-3.4.jar:/workspace/m2-repository/org/objenesis/objenesis/2.2/objenesis-2.2.jar:/workspace/m2-repository/junit/junit/4.12/junit-4.12.jar:/workspace/m2-repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/workspace/m2-repository/org/slf4j/slf4j-simple/1.7.14/slf4j-simple-1.7.14.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/gitpod"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre"/>
+    <property name="basedir" value="/workspace/Java-Thread-Affinity/affinity"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/workspace/Java-Thread-Affinity/affinity/target/surefire/surefirebooter5518104813199388368.jar"/>
+    <property name="sun.boot.class.path" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/resources.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/rt.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/sunrsasign.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/jsse.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/jce.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/charsets.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/jfr.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_272-b10"/>
+    <property name="user.name" value="gitpod"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.14.174+"/>
+    <property name="java.endorsed.dirs" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/workspace/m2-repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_272"/>
+    <property name="user.dir" value="/workspace/Java-Thread-Affinity/affinity"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="25.272-b10"/>
+    <property name="java.ext.dirs" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="dumpLocksI3" classname="net.openhft.affinity.AffinityLockTest" time="0.188">
+    <system-out><![CDATA[0: General use CPU
+1: Thread[engine,5,main] alive=true
+2: General use CPU
+3: Thread[main,5,main] alive=false
+
+]]></system-out>
+    <system-err><![CDATA[[main] INFO net.openhft.affinity.AffinityLock - No isolated CPUs found, so assuming CPUs 1 to 4 available.
+]]></system-err>
+  </testcase>
+  <testcase name="dumpLocksI7" classname="net.openhft.affinity.AffinityLockTest" time="0.014">
+    <system-out><![CDATA[0: General use CPU
+1: CPU not available
+2: Thread[logger,5,main] alive=true
+3: Thread[engine,5,main] alive=true
+4: General use CPU
+5: CPU not available
+6: Thread[main,5,main] alive=false
+7: Thread[tcp,5,main] alive=true
+
+]]></system-out>
+  </testcase>
+  <testcase name="assignReleaseThread" classname="net.openhft.affinity.AffinityLockTest" time="0.024">
+    <system-err><![CDATA[[main] INFO net.openhft.affinity.AffinityLock - Assigning cpu 3 to Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 3 from Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable Core for Thread[main,5,main]
+[main] INFO net.openhft.affinity.AffinityLock - Assigning cpu 3 to Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 3 from Thread[main,5,main]
+]]></system-err>
+  </testcase>
+  <testcase name="dumpLocksCoreDuo" classname="net.openhft.affinity.AffinityLockTest" time="0.002">
+    <system-out><![CDATA[0: General use CPU
+1: Thread[engine,5,main] alive=true
+
+]]></system-out>
+  </testcase>
+  <testcase name="testAffinity" classname="net.openhft.affinity.AffinityLockTest" time="0.018">
+    <system-out><![CDATA[Thread[main,5,main] on 10
+0: General use CPU
+1: Reserved for this application
+2: Reserved for this application
+3: Reserved for this application
+4: General use CPU
+5: General use CPU
+6: General use CPU
+7: General use CPU
+8: General use CPU
+9: General use CPU
+10: General use CPU
+11: General use CPU
+12: General use CPU
+13: General use CPU
+14: General use CPU
+15: General use CPU
+
+Main locked
+Thread[main,5,main] on 3
+0: General use CPU
+1: Reserved for this application
+2: Reserved for this application
+3: Thread[main,5,main] alive=true
+4: General use CPU
+5: General use CPU
+6: General use CPU
+7: General use CPU
+8: General use CPU
+9: General use CPU
+10: General use CPU
+11: General use CPU
+12: General use CPU
+13: General use CPU
+14: General use CPU
+15: General use CPU
+
+Thread-0 locked
+Thread[Thread-1,5,main] on 3
+0: General use CPU
+1: Reserved for this application
+2: Thread[Thread-1,5,main] alive=true
+3: Thread[main,5,main] alive=true
+4: General use CPU
+5: General use CPU
+6: General use CPU
+7: General use CPU
+8: General use CPU
+9: General use CPU
+10: General use CPU
+11: General use CPU
+12: General use CPU
+13: General use CPU
+14: General use CPU
+15: General use CPU
+
+Thread-0 unlocked
+Thread[main,5,main] on 3
+0: General use CPU
+1: Reserved for this application
+2: Reserved for this application
+3: Thread[main,5,main] alive=true
+4: General use CPU
+5: General use CPU
+6: General use CPU
+7: General use CPU
+8: General use CPU
+9: General use CPU
+10: General use CPU
+11: General use CPU
+12: General use CPU
+13: General use CPU
+14: General use CPU
+15: General use CPU
+
+All unlocked
+Thread[main,5,main] on 3
+0: General use CPU
+1: Reserved for this application
+2: Reserved for this application
+3: Reserved for this application
+4: General use CPU
+5: General use CPU
+6: General use CPU
+7: General use CPU
+8: General use CPU
+9: General use CPU
+10: General use CPU
+11: General use CPU
+12: General use CPU
+13: General use CPU
+14: General use CPU
+15: General use CPU
+
+]]></system-out>
+    <system-err><![CDATA[[main] INFO net.openhft.affinity.AffinityLockTest - Started
+[main] INFO net.openhft.affinity.AffinityLock - Assigning cpu 3 to Thread[main,5,main]
+[Thread-1] INFO net.openhft.affinity.LockInventory - Releasing cpu 2 from Thread[Thread-1,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 3 from Thread[main,5,main]
+]]></system-err>
+  </testcase>
+  <testcase name="testGettid" classname="net.openhft.affinity.AffinityLockTest" time="0.001">
+    <system-out><![CDATA[cpu= 3
+]]></system-out>
+  </testcase>
+  <testcase name="testIssue19" classname="net.openhft.affinity.AffinityLockTest" time="0.181">
+    <system-out><![CDATA[AffinityLock.PROCESSORS=5
+]]></system-out>
+    <system-err><![CDATA[[main] INFO net.openhft.affinity.AffinityLock - Assigning cpu 3 to Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] WARN net.openhft.affinity.LockInventory - No reservable CPU for Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 1 from Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 2 from Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 3 from Thread[main,5,main]
+]]></system-err>
+  </testcase>
+  <testcase name="testIssue21" classname="net.openhft.affinity.AffinityLockTest" time="0.002">
+    <system-err><![CDATA[[main] INFO net.openhft.affinity.AffinityLock - Assigning cpu 3 to Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 2 from Thread[main,5,main]
+[main] INFO net.openhft.affinity.LockInventory - Releasing cpu 3 from Thread[main,5,main]
+]]></system-err>
+  </testcase>
+</testsuite>

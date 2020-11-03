@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1604378447780
+Build-Jdk-Spec: 1.8
+Bundle-Description: Java Thread Affinity library
+Bundle-ManifestVersion: 2
+Bundle-Name: OpenHFT :: affinity
+Bundle-SymbolicName: net.openhft.affinity
+Bundle-Version: 3.0.6
+Created-By: Apache Maven Bundle Plugin
+Export-Package: net.openhft.affinity;version="3.0.6",net.openhft.affinit
+ y.impl;uses:="com.sun.jna,net.openhft.affinity";version="3.0.6",net.ope
+ nhft.ticker;version="3.0.6",net.openhft.ticker.impl;uses:="net.openhft.
+ ticker";version="3.0.6"
+Import-Package: com.sun.jna,com.sun.jna.platform.win32;resolution:=optio
+ nal,com.sun.jna.ptr,org.slf4j;version="[1.7,2)",sun.misc
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-5.1.1.202006162103

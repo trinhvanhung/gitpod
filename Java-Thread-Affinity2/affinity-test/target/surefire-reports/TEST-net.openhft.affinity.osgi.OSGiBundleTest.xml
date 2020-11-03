@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="net.openhft.affinity.osgi.OSGiBundleTest" time="1.071" tests="3" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspace/Java-Thread-Affinity/affinity-test/target/test-classes:/workspace/Java-Thread-Affinity/affinity-test/target/classes:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/../lib/tools.jar:/workspace/Java-Thread-Affinity/affinity/target/affinity-3.0.6.jar:/workspace/m2-repository/net/java/dev/jna/jna/4.2.1/jna-4.2.1.jar:/workspace/m2-repository/net/java/dev/jna/jna-platform/4.2.1/jna-platform-4.2.1.jar:/workspace/m2-repository/com/intellij/annotations/12.0/annotations-12.0.jar:/workspace/m2-repository/javax/inject/javax.inject/1/javax.inject-1.jar:/workspace/m2-repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar:/workspace/m2-repository/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-container-native/4.8.0/pax-exam-container-native-4.8.0.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam/4.8.0/pax-exam-4.8.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-store/1.5.0/ops4j-base-store-1.5.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-io/1.5.0/ops4j-base-io-1.5.0.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-spi/4.8.0/pax-exam-spi-4.8.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-spi/1.5.0/ops4j-base-spi-1.5.0.jar:/workspace/m2-repository/org/ops4j/pax/tinybundles/tinybundles/2.1.1/tinybundles-2.1.1.jar:/workspace/m2-repository/biz/aQute/bnd/bndlib/2.4.0/bndlib-2.4.0.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-core/1.8.2/pax-swissbox-core-1.8.2.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-lifecycle/1.8.2/pax-swissbox-lifecycle-1.8.2.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-tracker/1.8.2/pax-swissbox-tracker-1.8.2.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-lang/1.5.0/ops4j-base-lang-1.5.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-net/1.5.0/ops4j-base-net-1.5.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-monitors/1.5.0/ops4j-base-monitors-1.5.0.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-link/2.4.2/pax-url-link-2.4.2.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-classpath/2.4.2/pax-url-classpath-2.4.2.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-junit4/4.8.0/pax-exam-junit4-4.8.0.jar:/workspace/m2-repository/junit/junit/4.12/junit-4.12.jar:/workspace/m2-repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-link-mvn/4.8.0/pax-exam-link-mvn-4.8.0.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-aether/2.4.5/pax-url-aether-2.4.5.jar:/workspace/m2-repository/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-reference/2.4.5/pax-url-reference-2.4.5.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-util-property/1.4.0/ops4j-base-util-property-1.4.0.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-optional-jcl/1.8.2/pax-swissbox-optional-jcl-1.8.2.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-commons/2.4.5/pax-url-commons-2.4.5.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-property/1.8.2/pax-swissbox-property-1.8.2.jar:/workspace/m2-repository/org/apache/felix/org.apache.felix.framework/4.4.1/org.apache.felix.framework-4.4.1.jar:/workspace/m2-repository/org/slf4j/slf4j-api/1.7.14/slf4j-api-1.7.14.jar:/workspace/m2-repository/org/slf4j/slf4j-simple/1.7.14/slf4j-simple-1.7.14.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/workspace/Java-Thread-Affinity/affinity-test/target/surefire/surefirebooter1359901681872708181.jar /workspace/Java-Thread-Affinity/affinity-test/target/surefire 2020-11-03T04-40-46_324-jvmRun1 surefire4412709569081982044tmp surefire_12200678062000116110tmp"/>
+    <property name="surefire.test.class.path" value="/workspace/Java-Thread-Affinity/affinity-test/target/test-classes:/workspace/Java-Thread-Affinity/affinity-test/target/classes:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/../lib/tools.jar:/workspace/Java-Thread-Affinity/affinity/target/affinity-3.0.6.jar:/workspace/m2-repository/net/java/dev/jna/jna/4.2.1/jna-4.2.1.jar:/workspace/m2-repository/net/java/dev/jna/jna-platform/4.2.1/jna-platform-4.2.1.jar:/workspace/m2-repository/com/intellij/annotations/12.0/annotations-12.0.jar:/workspace/m2-repository/javax/inject/javax.inject/1/javax.inject-1.jar:/workspace/m2-repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar:/workspace/m2-repository/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-container-native/4.8.0/pax-exam-container-native-4.8.0.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam/4.8.0/pax-exam-4.8.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-store/1.5.0/ops4j-base-store-1.5.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-io/1.5.0/ops4j-base-io-1.5.0.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-spi/4.8.0/pax-exam-spi-4.8.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-spi/1.5.0/ops4j-base-spi-1.5.0.jar:/workspace/m2-repository/org/ops4j/pax/tinybundles/tinybundles/2.1.1/tinybundles-2.1.1.jar:/workspace/m2-repository/biz/aQute/bnd/bndlib/2.4.0/bndlib-2.4.0.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-core/1.8.2/pax-swissbox-core-1.8.2.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-lifecycle/1.8.2/pax-swissbox-lifecycle-1.8.2.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-tracker/1.8.2/pax-swissbox-tracker-1.8.2.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-lang/1.5.0/ops4j-base-lang-1.5.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-net/1.5.0/ops4j-base-net-1.5.0.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-monitors/1.5.0/ops4j-base-monitors-1.5.0.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-link/2.4.2/pax-url-link-2.4.2.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-classpath/2.4.2/pax-url-classpath-2.4.2.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-junit4/4.8.0/pax-exam-junit4-4.8.0.jar:/workspace/m2-repository/junit/junit/4.12/junit-4.12.jar:/workspace/m2-repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/workspace/m2-repository/org/ops4j/pax/exam/pax-exam-link-mvn/4.8.0/pax-exam-link-mvn-4.8.0.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-aether/2.4.5/pax-url-aether-2.4.5.jar:/workspace/m2-repository/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-reference/2.4.5/pax-url-reference-2.4.5.jar:/workspace/m2-repository/org/ops4j/base/ops4j-base-util-property/1.4.0/ops4j-base-util-property-1.4.0.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-optional-jcl/1.8.2/pax-swissbox-optional-jcl-1.8.2.jar:/workspace/m2-repository/org/ops4j/pax/url/pax-url-commons/2.4.5/pax-url-commons-2.4.5.jar:/workspace/m2-repository/org/ops4j/pax/swissbox/pax-swissbox-property/1.8.2/pax-swissbox-property-1.8.2.jar:/workspace/m2-repository/org/apache/felix/org.apache.felix.framework/4.4.1/org.apache.felix.framework-4.4.1.jar:/workspace/m2-repository/org/slf4j/slf4j-api/1.7.14/slf4j-api-1.7.14.jar:/workspace/m2-repository/org/slf4j/slf4j-simple/1.7.14/slf4j-simple-1.7.14.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/gitpod"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre"/>
+    <property name="basedir" value="/workspace/Java-Thread-Affinity/affinity-test"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/workspace/Java-Thread-Affinity/affinity-test/target/surefire/surefirebooter1359901681872708181.jar"/>
+    <property name="sun.boot.class.path" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/resources.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/rt.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/sunrsasign.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/jsse.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/jce.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/charsets.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/jfr.jar:/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_272-b10"/>
+    <property name="user.name" value="gitpod"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.14.174+"/>
+    <property name="java.endorsed.dirs" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/workspace/m2-repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_272"/>
+    <property name="user.dir" value="/workspace/Java-Thread-Affinity/affinity-test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="25.272-b10"/>
+    <property name="java.ext.dirs" value="/home/gitpod/.sdkman/candidates/java/8.0.272-amzn/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="checkBundleState" classname="net.openhft.affinity.osgi.OSGiBundleTest" time="0.832">
+    <error message="Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required." type="java.io.IOException"><![CDATA[java.io.IOException: Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+]]></error>
+    <system-err><![CDATA[[main] INFO org.ops4j.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 4.8.0) created.
+[main] INFO org.ops4j.pax.exam.junit.impl.ProbeRunner - creating PaxExam runner for class net.openhft.affinity.osgi.OSGiBundleTest
+[main] INFO org.ops4j.pax.exam.junit.impl.ProbeRunner - running test class net.openhft.affinity.osgi.OSGiBundleTest
+[main] WARN org.ops4j.pax.url.mvn.internal.AetherBasedResolver - Error resolving artifactorg.ops4j.pax.exam:pax-exam-inject:jar:4.8.0:Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+shaded.org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at shaded.org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:615)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:570)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:548)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:523)
+	at org.ops4j.pax.url.mvn.internal.Connection.getInputStream(Connection.java:123)
+	at org.apache.felix.framework.util.SecureAction.getURLConnectionInputStream(SecureAction.java:524)
+	at org.apache.felix.framework.cache.JarRevision.initialize(JarRevision.java:166)
+	at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:77)
+	at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:878)
+	at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:550)
+	at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:153)
+	at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:277)
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:2874)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:165)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:138)
+	at org.ops4j.pax.exam.nat.internal.NativeTestContainer.installAndStartBundles(NativeTestContainer.java:340)
+	at org.ops4j.pax.exam.nat.internal.NativeTestContainer.start(NativeTestContainer.java:209)
+	at org.ops4j.pax.exam.spi.reactors.AllConfinedStagedReactor.invoke(AllConfinedStagedReactor.java:79)
+	at org.ops4j.pax.exam.junit.impl.ProbeRunner$2.evaluate(ProbeRunner.java:267)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.ops4j.pax.exam.junit.impl.ProbeRunner.run(ProbeRunner.java:98)
+	at org.ops4j.pax.exam.junit.PaxExam.run(PaxExam.java:93)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: shaded.org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at shaded.org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 41 more
+Caused by: shaded.org.apache.maven.wagon.TransferFailedException: Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.apache.maven.wagon.providers.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:1039)
+	at shaded.org.apache.maven.wagon.providers.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:977)
+	at shaded.org.apache.maven.wagon.StreamWagon.getInputStream(StreamWagon.java:116)
+	at shaded.org.apache.maven.wagon.StreamWagon.getIfNewer(StreamWagon.java:88)
+	at shaded.org.apache.maven.wagon.StreamWagon.get(StreamWagon.java:61)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter$GetTaskRunner.run(WagonTransporter.java:560)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter.execute(WagonTransporter.java:427)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter.get(WagonTransporter.java:404)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350)
+	... 46 more
+]]></system-err>
+  </testcase>
+  <testcase name="checkBundleExports" classname="net.openhft.affinity.osgi.OSGiBundleTest" time="0.056">
+    <error message="Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required." type="java.io.IOException"><![CDATA[java.io.IOException: Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+]]></error>
+    <system-err><![CDATA[[main] WARN org.ops4j.pax.url.mvn.internal.AetherBasedResolver - Error resolving artifactorg.ops4j.pax.exam:pax-exam-inject:jar:4.8.0:Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+shaded.org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at shaded.org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:615)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:570)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:548)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:523)
+	at org.ops4j.pax.url.mvn.internal.Connection.getInputStream(Connection.java:123)
+	at org.apache.felix.framework.util.SecureAction.getURLConnectionInputStream(SecureAction.java:524)
+	at org.apache.felix.framework.cache.JarRevision.initialize(JarRevision.java:166)
+	at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:77)
+	at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:878)
+	at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:550)
+	at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:153)
+	at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:277)
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:2874)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:165)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:138)
+	at org.ops4j.pax.exam.nat.internal.NativeTestContainer.installAndStartBundles(NativeTestContainer.java:340)
+	at org.ops4j.pax.exam.nat.internal.NativeTestContainer.start(NativeTestContainer.java:209)
+	at org.ops4j.pax.exam.spi.reactors.AllConfinedStagedReactor.invoke(AllConfinedStagedReactor.java:79)
+	at org.ops4j.pax.exam.junit.impl.ProbeRunner$2.evaluate(ProbeRunner.java:267)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.ops4j.pax.exam.junit.impl.ProbeRunner.run(ProbeRunner.java:98)
+	at org.ops4j.pax.exam.junit.PaxExam.run(PaxExam.java:93)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: shaded.org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at shaded.org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 41 more
+Caused by: shaded.org.apache.maven.wagon.TransferFailedException: Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.apache.maven.wagon.providers.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:1039)
+	at shaded.org.apache.maven.wagon.providers.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:977)
+	at shaded.org.apache.maven.wagon.StreamWagon.getInputStream(StreamWagon.java:116)
+	at shaded.org.apache.maven.wagon.StreamWagon.getIfNewer(StreamWagon.java:88)
+	at shaded.org.apache.maven.wagon.StreamWagon.get(StreamWagon.java:61)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter$GetTaskRunner.run(WagonTransporter.java:560)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter.execute(WagonTransporter.java:427)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter.get(WagonTransporter.java:404)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350)
+	... 46 more
+]]></system-err>
+  </testcase>
+  <testcase name="checkInject" classname="net.openhft.affinity.osgi.OSGiBundleTest" time="0.052">
+    <error message="Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required." type="java.io.IOException"><![CDATA[java.io.IOException: Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+]]></error>
+    <system-err><![CDATA[[main] WARN org.ops4j.pax.url.mvn.internal.AetherBasedResolver - Error resolving artifactorg.ops4j.pax.exam:pax-exam-inject:jar:4.8.0:Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+shaded.org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at shaded.org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:615)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:570)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:548)
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:523)
+	at org.ops4j.pax.url.mvn.internal.Connection.getInputStream(Connection.java:123)
+	at org.apache.felix.framework.util.SecureAction.getURLConnectionInputStream(SecureAction.java:524)
+	at org.apache.felix.framework.cache.JarRevision.initialize(JarRevision.java:166)
+	at org.apache.felix.framework.cache.JarRevision.<init>(JarRevision.java:77)
+	at org.apache.felix.framework.cache.BundleArchive.createRevisionFromLocation(BundleArchive.java:878)
+	at org.apache.felix.framework.cache.BundleArchive.reviseInternal(BundleArchive.java:550)
+	at org.apache.felix.framework.cache.BundleArchive.<init>(BundleArchive.java:153)
+	at org.apache.felix.framework.cache.BundleCache.create(BundleCache.java:277)
+	at org.apache.felix.framework.Felix.installBundle(Felix.java:2874)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:165)
+	at org.apache.felix.framework.BundleContextImpl.installBundle(BundleContextImpl.java:138)
+	at org.ops4j.pax.exam.nat.internal.NativeTestContainer.installAndStartBundles(NativeTestContainer.java:340)
+	at org.ops4j.pax.exam.nat.internal.NativeTestContainer.start(NativeTestContainer.java:209)
+	at org.ops4j.pax.exam.spi.reactors.AllConfinedStagedReactor.invoke(AllConfinedStagedReactor.java:79)
+	at org.ops4j.pax.exam.junit.impl.ProbeRunner$2.evaluate(ProbeRunner.java:267)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.ops4j.pax.exam.junit.impl.ProbeRunner.run(ProbeRunner.java:98)
+	at org.ops4j.pax.exam.junit.PaxExam.run(PaxExam.java:93)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: shaded.org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at shaded.org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 41 more
+Caused by: shaded.org.apache.maven.wagon.TransferFailedException: Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+	at shaded.org.apache.maven.wagon.providers.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:1039)
+	at shaded.org.apache.maven.wagon.providers.http.AbstractHttpClientWagon.fillInputData(AbstractHttpClientWagon.java:977)
+	at shaded.org.apache.maven.wagon.StreamWagon.getInputStream(StreamWagon.java:116)
+	at shaded.org.apache.maven.wagon.StreamWagon.getIfNewer(StreamWagon.java:88)
+	at shaded.org.apache.maven.wagon.StreamWagon.get(StreamWagon.java:61)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter$GetTaskRunner.run(WagonTransporter.java:560)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter.execute(WagonTransporter.java:427)
+	at shaded.org.eclipse.aether.transport.wagon.WagonTransporter.get(WagonTransporter.java:404)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447)
+	at shaded.org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350)
+	... 46 more
+]]></system-err>
+  </testcase>
+</testsuite>

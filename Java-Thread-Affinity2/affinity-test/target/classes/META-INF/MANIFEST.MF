@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1604378448353
+Build-Jdk-Spec: 1.8
+Bundle-Description: Java Thread Affinity library
+Bundle-ManifestVersion: 2
+Bundle-Name: affinity-test
+Bundle-SymbolicName: net.openhft.affinity-test
+Bundle-Version: 3.0.4.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: net.openhft.affinity.osgi;version="3.0.4"
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-5.1.1.202006162103

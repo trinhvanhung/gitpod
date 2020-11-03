@@ -1,0 +1,14 @@
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/ticker/impl/JNIClockTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/impl/PosixJNAAffinityTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/AffinityLockTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/software/chronicle/enterprise/internals/NativeAffinityTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/impl/LinuxJNAAffinityTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/AffinityThreadFactoryMain.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/InterrupedThread.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/org/junit/Assert.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/impl/NativeAffinityImpTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/impl/VanillaCpuLayoutTest.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/AffinitySupportMain.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/AffinityLockBindMain.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/AffinityLockMain.java
+/workspace/Java-Thread-Affinity/affinity/src/test/java/net/openhft/affinity/impl/AbstractAffinityImplTest.java

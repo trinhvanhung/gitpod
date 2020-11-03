@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: net.openhft.affinity.osgi.OSGiBundleTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 1.071 s <<< FAILURE! - in net.openhft.affinity.osgi.OSGiBundleTest
+net.openhft.affinity.osgi.OSGiBundleTest.checkBundleState  Time elapsed: 0.832 s  <<< ERROR!
+java.io.IOException: Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+
+net.openhft.affinity.osgi.OSGiBundleTest.checkBundleExports  Time elapsed: 0.056 s  <<< ERROR!
+java.io.IOException: Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+
+net.openhft.affinity.osgi.OSGiBundleTest.checkInject  Time elapsed: 0.052 s  <<< ERROR!
+java.io.IOException: Error resolving artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0: Could not transfer artifact org.ops4j.pax.exam:pax-exam-inject:jar:4.8.0 from/to central (http://repo1.maven.org/maven2/): Failed to transfer file: http://repo1.maven.org/maven2/org/ops4j/pax/exam/pax-exam-inject/4.8.0/pax-exam-inject-4.8.0.jar. Return code is: 501 , ReasonPhrase:HTTPS Required.
+
